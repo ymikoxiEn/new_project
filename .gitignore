@@ -1,0 +1,50 @@
+# Byte-compiled / cache
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Virtual environment
+venv/
+env/
+tf-env/
+*.env
+.env/
+
+# Jupyter and IPython
+.ipynb_checkpoints
+
+# OS-specific
+.DS_Store
+Thumbs.db
+
+# IDEs/editors
+.vscode/
+.idea/
+
+# Logs and outputs
+*.log
+*.csv
+*.txt
+*.out
+
+# Model files
+*.h5
+*.hdf5
+*.keras
+models/
+
+# Test data or outputs
+*.jpg
+*.png
+*.mp4
+
+# PyInstaller
+dist/
+build/
+*.spec
+
+# TensorBoard logs
+logs/
+
+# Pip environment file
+pip-selfcheck.json
