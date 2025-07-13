@@ -28,4 +28,4 @@ RUN pip install --no-cache-dir --upgrade pip && \
     pip install --no-cache-dir -r requirements.txt
 
 # Set the entrypoint
-CMD ["python", "face_detection.py"]
+CMD ["streamlit", "run", "face_detection.py", "--server.port=8080", "--server.enableCORS=false"]
