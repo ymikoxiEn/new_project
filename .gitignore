@@ -30,6 +30,8 @@ Thumbs.db
 # Model files
 *.hdf5
 *.keras
+*.h5              # Ignore all .h5 by default...
+!emotion_model.h5 # ...but include the required model file
 models/
 
 # Test data or outputs
