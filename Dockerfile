@@ -1,4 +1,4 @@
-# Base image with Python and essential tools
+# Base image with Python
 FROM python:3.11-slim
 
 # Set environment variables
@@ -20,12 +20,15 @@ RUN apt-get update && apt-get install -y \
 # Create app directory
 WORKDIR /app
 
-# Copy your code
+# Copy your code into the container
 COPY . /app
 
 # Install Python dependencies
 RUN pip install --no-cache-dir --upgrade pip && \
     pip install --no-cache-dir -r requirements.txt
 
-# Set the entrypoint
+# (Optional) Expose the Cloud Run port
+EXPOSE 8080
+
+# ✅ Start Streamlit from face_detection.py
 CMD ["streamlit", "run", "face_detection.py", "--server.port=8080", "--server.enableCORS=false"]
