@@ -28,7 +28,6 @@ Thumbs.db
 *.out
 
 # Model files
-*.h5
 *.hdf5
 *.keras
 models/
